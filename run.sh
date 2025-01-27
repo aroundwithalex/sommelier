@@ -49,5 +49,10 @@ if [ "$(uname -s)"  = 'Linux' ]; then
 	esac
 fi
 
-$SR_PKG_MANAGER install -y git
-$SR_PKG_MANAGER update && $SR_PKG_MANAGER upgrade
+$SR_PKG_MANAGER install -y git > /dev/null
+$SR_PKG_MANAGER update >/dev/null && $SR_PKG_MANAGER upgrade > /dev/null
+
+rm -rf ~/.local/share/sommelier
+
+git clone https://github.com/aroundwithalex/sommelier.git --single-branch  ~/.local/share/sommelier > /dev/null
+
