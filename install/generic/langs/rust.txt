@@ -1,0 +1,8 @@
+echo "\n\n Installing Rust\n\n"
+
+wget -q https://static.rust-lang.org/rustup/rustup-init.sh
+bash rustup-init.sh
+
+source "$HOME/.cargo/env.fish"
+
+echo "\n\n Rust successfully installed\n\n" 
