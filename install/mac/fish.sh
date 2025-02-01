@@ -1,5 +1,5 @@
 echo "\n\n Installing Fish shell\n\n"
-sudo dnf install -y fish
+brew install fish
 
 echo "\n\n Changing shell to Fish\n\n"
 sudo chsh -s $(which fish)

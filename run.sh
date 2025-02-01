@@ -65,4 +65,4 @@ git clone https://github.com/aroundwithalex/sommelier.git --single-branch  ~/.lo
 
 cd ~/.local/share/sommelier
 
-source install.sh $DETECTED_OS
+bash install.sh $DETECTED_OS

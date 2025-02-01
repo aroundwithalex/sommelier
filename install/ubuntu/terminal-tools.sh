@@ -1,6 +1,6 @@
 echo "\n\n Installing terminal tools (ripgrep etc) \n\n"
 
-sudo dnf install -y fastfetch ripgrep gh fzf bat eza zoxide plocate btop
+sudo apt install -y fastfetch ripgrep gh fzf bat eza zoxide plocate btop
 
 zoxide init fish | source
 
