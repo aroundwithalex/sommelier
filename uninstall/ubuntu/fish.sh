@@ -1,6 +1,6 @@
 echo "\n\n Removing Fish...\n\n"
 
-sudo dnf remove -y fish-*
+sudo apt remove -y fish-*
 
 sudo chsh -s $(which bash)
 
