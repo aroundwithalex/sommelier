@@ -9,4 +9,5 @@ sudo dnf remove -y docker \
                   docker-selinux \
                   docker-engine-selinux \
                   docker-engine
+sudo groupdel docker
 echo "\n\n Docker successfully removed \n\n"
