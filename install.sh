@@ -7,7 +7,11 @@ if [ -z "$1" ]; then
 	exit 1
 fi
 
-rm -rf /tmp/sommelier
+
+if [ -d "/tmp/sommelier" ]; then
+	rm -rf /tmp/sommelier
+fi
+
 mkdir /tmp/sommelier
 
 for file in $(pwd)/install/${OS}/*.sh; do
@@ -27,3 +31,11 @@ for file in $(pwd)/install/generic/langs/*.sh; do
 	source $file
 	cd -
 done
+
+for file in $(pwd)/style/${OS}/*.sh; do
+	cd /tmp/sommelier
+	source $file
+	cd -
+done
+
+rm -rf /tmp/sommelier 

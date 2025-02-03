@@ -1,1 +1,1 @@
-dracula.sh
+../dracula.sh
