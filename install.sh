@@ -15,28 +15,28 @@ fi
 mkdir /tmp/sommelier
 
 for file in $(pwd)/install/${OS}/*.sh; do
-	cd /tmp/sommelier
+	cd /tmp/sommelier &> /dev/null
 	source $file
-	cd -
+	cd - &> /dev/null
 done
 
 for file in $(pwd)/install/generic/tools/*.sh; do
-	cd /tmp/sommelier
+	cd /tmp/sommelier &> /dev/null
 	source $file
-	cd - 
+	cd - &> /dev/null
 done
 
 for file in $(pwd)/install/generic/langs/*.sh; do
-	cd /tmp/sommelier
+	cd /tmp/sommelier &> /dev/null
 	source $file
-	cd -
+	cd - &> /dev/null
 done
 
 # TODO: Also pull down background images
 for file in $(pwd)/style/${OS}/*.sh; do
-	cd /tmp/sommelier
+	cd /tmp/sommelier &> /dev/null
 	source $file
-	cd -
+	cd - &> /dev/null
 done
 
 rm -rf /tmp/sommelier 
