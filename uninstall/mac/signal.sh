@@ -1,4 +1,4 @@
-echo "\n\n Removing Signal...\n\n"
+printf "$(tput setaf 1)\n Removing Signal...\n"
 brew uninstall signal
 
-echo "\n\n Signal successfully removed\n\n"
+printf "$(tput setaf 1)\n Signal successfully removed\n"

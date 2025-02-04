@@ -1,3 +1,3 @@
-echo "\n\n Installing Xournal\n\n"
+printf "$(tput setaf 2)\n Installing Xournal\n"
 sudo apt install -y xournalpp
-echo "\n\n Xournal successfully installed\n\n"
+printf "$(tput setaf 2)\n Xournal successfully installed\n"

@@ -1,7 +1,7 @@
-echo "\n\n Installing ghostty\n\n"
+printf "$(tput setaf 2)\n Installing ghostty\n"
 sudo dnf copr enable pgdev/ghostty
 sudo dnf install -y ghostty
-echo "\n\n ghostty successfully installed\n\n"
+echo "$(tput setaf 2)\n ghostty successfully installed\n"
 
 cd ../../cfgs/ghostty
 

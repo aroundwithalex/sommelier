@@ -1,3 +1,3 @@
-echo "\n\n Removing Sublime Text\n\n"
+printf "$(tput setaf 1)\n Removing Sublime Text\n"
 brew uninstall --cask sublime-text
-echo "\n\n Sublime Text successfully removed\n\n"
+printf "$(tput setaf 1)\n Sublime Text successfully removed\n"

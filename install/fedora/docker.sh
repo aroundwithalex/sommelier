@@ -1,4 +1,4 @@
-echo "\n\n Installing Docker...\n\n"
+printf "$(tput setaf 2)\n Installing Docker...\n"
 
 sudo dnf remove docker \
                   docker-client \
@@ -18,7 +18,7 @@ sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 
 sudo systemctl enable --now docker
 
-echo "\n\n Testing Docker installation...\n\n"
+printf "$(tput setaf 3)\n Testing Docker installation...\n"
 sudo docker run hello-world
 
 if ! getent group docker; then
@@ -29,4 +29,4 @@ fi
 
 docker run hello-world
 
-echo "\n\n Docker successfully installed\n\n"
+printf "$(tput setaf 2)\n Docker successfully installed\n"

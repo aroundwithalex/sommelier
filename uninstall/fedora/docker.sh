@@ -1,4 +1,4 @@
-echo "\n\n Removing Docker...\n\n"
+printf "$(tput setaf 1)\n Removing Docker...\n"
 sudo dnf remove -y docker \
                   docker-client \
                   docker-client-latest \
@@ -10,4 +10,4 @@ sudo dnf remove -y docker \
                   docker-engine-selinux \
                   docker-engine
 sudo groupdel docker
-echo "\n\n Docker successfully removed \n\n"
+printf "$(tput setaf 1)\n Docker successfully removed \n"

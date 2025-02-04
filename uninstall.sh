@@ -1,5 +1,7 @@
 #!/bin/bash
 
+printf "$(tput setaf 1) Uninstalling applications...."
+
 if [ "$(uname -s)" == 'Darwin' ]; then
     for file in ~/.local/share/sommelier/uninstall/mac/*.sh; do
         source $file
@@ -18,8 +20,11 @@ else
         done
         sudo apt autoremove -y
     else
-        echo "\n\n Unable to uninstall applications as you are using an"
-        echo "unsupported version of Linu: $OS\n\n"
+        printf "$(tput setaf 1)\n Unable to uninstall applications as you are using an"
+        printf "$(tput setaf 1)unsupported version of Linu: $OS\n\n"
         exit 1
     fi
 fi
+
+printf "$(tput setaf 1) Applications successfully uninstalled"
+# TODO: Set settings back to default

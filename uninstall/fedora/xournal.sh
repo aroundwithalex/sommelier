@@ -1,3 +1,3 @@
-echo "\n\n Removing Xournal\n\n"
+printf "$(tput setaf 1)\n Removing Xournal\n"
 sudo dnf remove -y xournal*
-echo "\n\n Xournal successfully removed\n\n"
+printf "$(tput setaf 1)\n Xournal successfully removed\n"

@@ -1,5 +1,5 @@
-echo "\n\n Removing Google Chrome...\n\n"
+printf "$(tput setaf 1)\n Removing Google Chrome...\n"
 
 brew uninstall --cask google-chrome
 
-echo "\n\n Google Chrome successfully removed \n\n"
+printf "$(tput setaf 1)\n Google Chrome successfully removed \n"

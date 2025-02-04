@@ -1,3 +1,3 @@
-echo "\n\n Installing flameshot \n\n"
+printf "$(tput setaf 2)\n Installing flameshot \n"
 sudo apt install -y flameshot
-echo "\n\n Flameshot successfully installed\n\n"
+printf "$(tput setaf 2)\n Flameshot successfully installed\n"

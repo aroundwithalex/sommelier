@@ -1,3 +1,3 @@
-echo "\n\n Removing Spotify\n\n"
+printf "$(tput setaf 1)\n Removing Spotify\n"
 brew uninstall --cask spotify
-echo "\n\n Spotify successfully removed\n\n"
+printf "$(tput setaf 1)\n Spotify successfully removed\n"

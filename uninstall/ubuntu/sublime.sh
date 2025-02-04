@@ -1,5 +1,5 @@
-echo "\n\n Removing Sublime...\n\n"
+printf "$(tput setaf 1)\n Removing Sublime...\n"
 
 sudo apt remove -y sublime-text-*
 
-echo "\n\n Sublime successfully removed \n\n"
+printf "$(tput setaf 1)\n Sublime successfully removed \n"

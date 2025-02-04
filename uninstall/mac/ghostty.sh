@@ -1,3 +1,3 @@
-echo "\n\n Removing ghostty\n\n"
+printf "$(tput setaf 1)\n Removing ghostty\n"
 brew uninstall --cask ghostty
-echo "\n\n ghostty successfully removed\n\n"
+printf "$(tput setaf 1)\n ghostty successfully removed\n"

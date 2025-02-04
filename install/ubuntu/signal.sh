@@ -1,6 +1,6 @@
 # NOTE: These instructions only work for 64-bit Debian-based
 # Linux distributions such as Ubuntu, Mint etc.
-echo "\n\n Installing signal...\n\n"
+printf "$(tput setaf 2)\n Installing signal...\n"
 # 1. Install our official public software signing key:
 wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg
 cat signal-desktop-keyring.gpg | sudo tee /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
@@ -11,4 +11,4 @@ echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] 
 
 # 3. Update your package database and install Signal:
 sudo apt update && sudo apt install signal-desktop
-echo "\n\n signal successfully installed\n\n"
+printf "$(tput setaf 2)\n signal successfully installed\n"

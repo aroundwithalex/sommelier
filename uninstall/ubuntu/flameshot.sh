@@ -1,5 +1,5 @@
-echo "\n\n Removing Flameshot...\n\n"
+printf "$(tput setaf 1)\n Removing Flameshot...\n"
 
 sudo apt remove -y flameshot
 
-echo "\n\n Flameshot successfully removed \n\n"
+printf "$(tput setaf 1)\n Flameshot successfully removed \n"

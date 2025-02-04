@@ -1,5 +1,5 @@
-echo "\n\n Removing Slack...\n\n"
+printf "$(tput setaf 1)\n Removing Slack...\n"
 
 sudo dnf remove -y slack*
 
-echo "\n\n Slack successfully removed \n\n"
+printf "$(tput setaf 1)\n Slack successfully removed \n"

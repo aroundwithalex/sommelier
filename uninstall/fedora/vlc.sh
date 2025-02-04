@@ -1,5 +1,5 @@
-echo "\n\n Removing VLC \n\n"
+printf "$(tput setaf 1)\n Removing VLC \n"
 
 sudo dnf remove -y vlc
 
-echo "\n\n Successfully removed VLC\n\n"
+printf "$(tput setaf 1)\n Successfully removed VLC\n"

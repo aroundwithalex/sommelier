@@ -1,5 +1,5 @@
-echo "\n\n Removing terminal tools (ripgrep etc) \n\n"
+printf "$(tput setaf 1)\n Removing terminal tools (ripgrep etc) \n"
 
 sudo dnf remove -y fastfetch ripgrep gh fzf bat eza zoxide plocate btop
 
-echo "\n\n Successfully removed terminal tools\n\n"
+printf "$(tput setaf 1)\n Successfully removed terminal tools\n"

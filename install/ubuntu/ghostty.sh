@@ -1,4 +1,4 @@
-echo "\n\n Installing ghostty\n\n"
+printf "$(tput setaf 2)\n Installing ghostty\n"
 source /etc/os-release
 ARCH=$(dpkg --print-architecture)
 GHOSTTY_DEB_URL=$(
@@ -8,7 +8,7 @@ GHOSTTY_DEB_URL=$(
 GHOSTTY_DEB_FILE=$(basename "$GHOSTTY_DEB_URL")
 curl -LO "$GHOSTTY_DEB_URL"
 sudo dpkg -i "$GHOSTTY_DEB_FILE"
-echo "\n\n ghostty successfully installed\n\n"
+printf "$(tput setaf 2)\n ghostty successfully installed\n"
 
 cd ../../cfgs/ghostty
 

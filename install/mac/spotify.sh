@@ -1,3 +1,3 @@
-echo "\n\n Installing Spotify\n\n"
+printf "$(tput setaf 2)\n Installing Spotify\n"
 brew install --cask spotify
-echo "\n\n Spotify successfully installed\n\n"
+printf "$(tput setaf 2)\n Spotify successfully installed\n"

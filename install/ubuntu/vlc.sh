@@ -1,3 +1,3 @@
-echo "\n\n Installing VLC\n\n"
+printf "$(tput setaf 2)\n Installing VLC\n"
 sudo apt install -y vlc
-echo "\n\n VLC successfully installed\n\n"
+printf "$(tput setaf 2)\n VLC successfully installed\n"

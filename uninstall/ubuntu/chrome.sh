@@ -1,6 +1,6 @@
-echo "\n\n Removing Google Chrome...\n\n"
+printf "$(tput setaf 1)\n Removing Google Chrome...\n"
 
 sudo apt remove -y google-chrome-*
 
-echo "\n\n Google Chrome successfully removed \n\n"
+printf "$(tput setaf 1)\n Google Chrome successfully removed \n"
  

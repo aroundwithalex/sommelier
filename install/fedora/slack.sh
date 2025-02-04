@@ -1,6 +1,6 @@
-echo "\n\n Installing Slack..."
+printf "$(tput setaf 2)\n Installing Slack...\n"
 https://slack.com/intl/en-gb/downloads/instructions/linux?ddl=1&build=rpm
 
 sudo apt install -y slack-*.rpm
 
-echo "\n\n Slack successfully installed\n\n"
+printf "$(tput setaf 2)\n Slack successfully installed\n"

@@ -1,4 +1,4 @@
-echo "\n\n Installing Docker...\n\n"
+printf "$(tput setaf 2)\n Installing Docker...\n"
 
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do 
         sudo apt-get remove $pkg; 
@@ -20,7 +20,7 @@ sudo apt-get update
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-echo "\n\n Testing Docker installation...\n\n"
+printf "$(tput setaf 3)\n Testing Docker installation...\n"
 sudo docker run hello-world
 
 if ! getent group docker; then
@@ -31,6 +31,6 @@ fi
 
 docker run hello-world
 
-echo "\n\n Docker successfully installed\n\n"
+printf "$(tput setaf 2)\n Docker successfully installed\n"
 
 

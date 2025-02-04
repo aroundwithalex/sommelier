@@ -1,6 +1,6 @@
-echo "\n\n Removing Fish shell\n\n"
+printf "$(tput setaf 1)\n Removing Fish shell\n"
 brew uninstall fish
 
 sudo chsh -s $(which zsh)
 
-echo "\n\n Fish successfully removed\n\n"
+printf "$(tput setaf 1)\n Fish successfully removed\n"

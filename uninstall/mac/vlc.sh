@@ -1,3 +1,3 @@
-echo "\n\n Removing VLC\n\n"
+printf "$(tput setaf 1)\n Removing VLC\n"
 brew uninstall --cask vlc
-echo "\n\n VLC successfully removed\n\n"
+printf "$(tput setaf 1)\n VLC successfully removed\n"

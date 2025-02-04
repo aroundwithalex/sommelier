@@ -1,3 +1,3 @@
-echo "\n\n Installing ghostty\n\n"
+printf "$(tput setaf 2)\n Installing ghostty\n"
 brew install --cask ghostty
-echo "\n\n ghostty successfully installed\n\n"
+printf "$(tput setaf 2)\n ghostty successfully installed\n"

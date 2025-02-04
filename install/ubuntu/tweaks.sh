@@ -1,3 +1,3 @@
-echo "\n\n Installing Gnome Tweaks\n\n"
+printf "$(tput setaf 2)\n Installing Gnome Tweaks\n"
 sudo apt install -y gnome-tweak-tool
-echo "\n\n Gnome Tweaks successfully installed\n\n"
+printf "$(tput setaf 2)\n Gnome Tweaks successfully installed\n"

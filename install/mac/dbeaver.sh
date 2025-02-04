@@ -1,3 +1,3 @@
-echo "\n\n Installing dbeaver\n\n"
+printf "$(tput setaf 2)\n Installing dbeaver\n"
 brew install --cask dbeaver-community
-echo "\n\n dbeaver successfully installed\n\n"
+printf "$(tput setaf 2)\n dbeaver successfully installed\n"

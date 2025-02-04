@@ -1,5 +1,5 @@
-echo "\n\n Removing Ghostty...\n\n"
+printf "$(tput setaf 1)\n Removing Ghostty...\n"
 
 sudo dnf remove -y ghostty-*
 
-echo "\n\n Ghostty successfully removed \n\n"
+printf "$(tput setaf 1)\n Ghostty successfully removed \n"

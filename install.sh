@@ -3,7 +3,7 @@
 OS=$1
 
 if [ -z "$1" ]; then
-	echo "\n\n No operating system specified. Exiting.\n\n"
+	printf "$(tput setaf 1)\n No operating system specified. Exiting.\n"
 	exit 1
 fi
 
@@ -32,6 +32,7 @@ for file in $(pwd)/install/generic/langs/*.sh; do
 	cd -
 done
 
+# TODO: Also pull down background images
 for file in $(pwd)/style/${OS}/*.sh; do
 	cd /tmp/sommelier
 	source $file

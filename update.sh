@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "\n\n Updating sommelier\n\n"
+printf "$(tput setaf 2)\n Updating sommelier\n"
 
 cd ~/.local/share/sommelier/
 
@@ -11,4 +11,4 @@ fi
 git checkout main &> /dev/null
 git pull &> /dev/null
 
-echo "\n\n sommelier successfully updated\n\n"
+echo "$(tput setaf 2)\n sommelier successfully updated\n"
