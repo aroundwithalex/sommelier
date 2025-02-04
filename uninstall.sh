@@ -1,6 +1,6 @@
 #!/bin/bash
 
-printf "$(tput setaf 1) Uninstalling applications...."
+printf "$(tput setaf 1)\n Uninstalling applications....\n"
 
 if [ "$(uname -s)" == 'Darwin' ]; then
     for file in ~/.local/share/sommelier/uninstall/mac/*.sh; do
@@ -21,9 +21,9 @@ else
         sudo apt autoremove -y
     else
         printf "$(tput setaf 1)\n Unable to uninstall applications as you are using an"
-        printf "$(tput setaf 1)unsupported version of Linu: $OS\n\n"
+        printf "$(tput setaf 1)unsupported version of Linux: $OS\n"
         exit 1
     fi
 fi
 
-printf "$(tput setaf 1) Applications successfully uninstalled"
+printf "$(tput setaf 1)\n Applications successfully uninstalled\n"
