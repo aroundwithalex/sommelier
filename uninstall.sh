@@ -27,4 +27,3 @@ else
 fi
 
 printf "$(tput setaf 1) Applications successfully uninstalled"
-# TODO: Set settings back to default
