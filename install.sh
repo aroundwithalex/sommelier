@@ -32,11 +32,12 @@ for file in $(pwd)/install/generic/langs/*.sh; do
 	cd - &> /dev/null
 done
 
-# TODO: Also pull down background images
 for file in $(pwd)/style/${OS}/*.sh; do
 	cd /tmp/sommelier &> /dev/null
 	source $file
 	cd - &> /dev/null
 done
+
+mkdir -p ~/Development
 
 rm -rf /tmp/sommelier 
