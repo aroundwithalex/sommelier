@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -exuo
+set -euo
 
 printf "$(tput setaf 2)\n Welcome to sommelier, a tool to automatically set up Unix machines!\n"
 printf "$(tput setaf 2)\n Please note that only certain operating systems (Fedora, Ubuntu, macOS) are supported\n"
