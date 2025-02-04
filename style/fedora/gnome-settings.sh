@@ -10,4 +10,6 @@ gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface cursor-theme 'Adwaita'
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 gsettings set org.gnome.desktop.interface icon-theme 'Adwaita'
+
+xdg-settings set default-web-browser google-chrome.desktop
 printf "$(tput setaf 2)\n Gnome settings successfully set...\n"
