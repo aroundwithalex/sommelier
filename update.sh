@@ -11,4 +11,4 @@ fi
 git checkout main &> /dev/null
 git pull &> /dev/null
 
-echo "$(tput setaf 2)\n sommelier successfully updated\n"
+printf "$(tput setaf 2)\n sommelier successfully updated\n"
