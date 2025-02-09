@@ -53,12 +53,28 @@ if [ "$(uname -s)"  = 'Linux' ]; then
 	esac
 elif [ "$(uname -s)" = 'Darwin' ]; then
 	if ! command -v brew &>/dev/null; then
+		printf "$(tput setaf 2)\n Homebrew is not installed. Installing...\n"
 		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	fi
 fi
 
-$PKG_MANAGER install -y git curl wget unzip > /dev/null
-$PKG_MANAGER update >/dev/null && $PKG_MANAGER upgrade > /dev/null
+printf "$(tput setaf 2)\n Installing dependencies (git, curl, wget, unzip)...\n"
+
+if ! $PKG_MANAGER install git curl wget unzip 2> /dev/null; then
+	printf "$(tput setaf 1)\n Unable to install dependencies. Please try again later.\n"
+	exit 1
+fi 
+
+printf "$(tput setaf 2)\n Updating and upgrading system with $PKG_MANAGER"
+if ! $PKG_MANAGER update 2> /dev/null; then
+	printf "$(tput setaf 1)\n Unable to update packages via $PKG_MANAGER\n"
+	exit 1
+fi
+
+if ! $PKG_MANAGER upgrade 2> /dev/null; then
+	printf "$(tput setaf 1)\n Unable to upgrade packages via $PKG_MAMANGER\n"
+	exit 1
+fi
 
 rm -rf ~/.local/share/sommelier
 
