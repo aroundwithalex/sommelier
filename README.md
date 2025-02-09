@@ -15,6 +15,54 @@
 - **Terminal tools** such as git, ripgrep, eza, fastfetch, GitHub CLI and btop.
 - **Styles** including Gnome settings, desktop backgrounds, fonts and the terminal theme Dracula.
 
+# 🖥️ Installation breakdown by type
+
+## Desktop
+
+| Tool | Fedora | Ubuntu | macOS
+| ---- | :------: | :-------: | :-------: |
+| [Google Chrome](https://www.google.com/intl/en_uk/chrome/) | ✔️ | ✔️ | ✔️ |
+| [DBeaver](https://dbeaver.io/) | ✔️ | ✔️ | ✔️ |
+| [Flameshot](https://flameshot.org/) | ❌ | ✔️ | ❌ | 
+| [Ghostty](https://ghostty.org/) | ✔️ | ✔️ | ✔️ |
+| [LocalSend](https://localsend.org/) | ❌ | ✔️ | ❌ |
+| [Signal](https://signal.org/) | ❌ | ✔️ | ✔️ |
+| [Slack](https://slack.com/intl/en-gb) | ✔️ | ✔️ | ✔️ |
+| [Spotify](https://open.spotify.com/) | ❌ | ✔️ | ✔️ |
+| [Sublime Text](https://www.sublimetext.com/) | ✔️ | ✔️ | ✔️ |
+| [VLC](https://www.videolan.org/) | ✔️ | ✔️ | ✔️ |
+| [Xournal](https://xournalpp.github.io/) | ✔️ | ✔️ | ❌ |
+
+## Terminal Tools
+| Tool | Fedora | Ubuntu | macOS
+| ---- | :------: | :-------: | :-------: |
+| [bat](https://github.com/sharkdp/bat) | ✔️ | ✔️ | ✔️ 
+| [btop](https://github.com/aristocratos/btop) | ✔️ | ✔️ | ✔️ |
+| [Docker](https://www.docker.com/)| ✔️ | ✔️ | ✔️ |
+| [eza](https://github.com/eza-community/eza) | ✔️ | ✔️ | ✔️ |
+| [Fastfetch](https://github.com/fastfetch-cli/fastfetch) | ✔️ | ✔️ | ✔️ |
+| [Fish Shell](https://fishshell.com/) | ✔️ | ✔️ | ✔️ |
+| [fzf](https://github.com/junegunn/fzf) | ✔️ | ✔️ | ✔️ |
+| [GitHub CLI](https://cli.github.com/) | ✔️ | ✔️ | ✔️ |
+| [Gnome Sushi](https://gitlab.gnome.org/GNOME/sushi) | ❌ | ✔️ | ❌ |
+| [Gnome Tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks) | ❌ | ✔️ | ❌ |
+| [plocate](https://plocate.sesse.net/) | ✔️ | ✔️ | ✔️ |
+| [ripgrep](https://github.com/BurntSushi/ripgrep) | ✔️ | ✔️ | ✔️ |
+| [Neovim](https://neovim.io/) | ✔️ | ✔️ | ✔️ | 
+| [wl-clipboard](https://github.com/bugaevc/wl-clipboard) | ✔️ | ✔️ | ❌ |
+| [zoxide](https://github.com/ajeetdsouza/zoxide) | ✔️ | ✔️ | ✔️ |
+
+## Styles
+
+| Tool | Fedora | Ubuntu | macOS
+| ---- | :------: | :-------: | :-------: |
+| Backgrounds | ✔️ | ✔️ | ❌
+| [Cascadia Mono (font)](https://www.nerdfonts.com/font-downloads) | ✔️ | ✔️ | ✔️ |
+| [Dracula (terminal theme)](https://draculatheme.com/fish) | ✔️ | ✔️ | ✔️ |
+| [Fira Code (font)](https://www.programmingfonts.org/#firacode) | ✔️ | ✔️ | ✔️ |
+| [Ubuntu Mono (Font)](https://www.programmingfonts.org/#ubuntu) | ✔️ | ✔️ | ✔️ |
+
+
 # 📦 Installation
 
 You can clone the repository and run `run.sh` in the root directory.
