@@ -63,7 +63,7 @@
 | [Ubuntu Mono (Font)](https://www.programmingfonts.org/#ubuntu) | ✔️ | ✔️ | ✔️ |
 
 ## Gnome Settings
-There are multiple Gnome settings that are tweaked as part of the installation process. These only apply to Fedora and Ubuntu, as macOS does not run on Gnome. These include pinning favourite apps to the dock, which include Sublime Text, Ghostty and Chrome, along with Spotify and Signal for Ubuntu. Google Chrome is also set as the default web browser and the stylistics of the UI adapted to prefer using dark themes (with [Adwaita](https://gnome.pages.gitlab.gnome.org/libadwaita/) in Fedora and [Yaru](https://github.com/ubuntu/yaru for Ubuntu). Additionally, a new hotkey is added to enable locking a screen using `<Cntrl> + L`. 
+There are multiple Gnome settings that are tweaked as part of the installation process. These only apply to Fedora and Ubuntu, as macOS does not run on Gnome. These include pinning favourite apps to the dock, which include Sublime Text, Ghostty and Chrome, along with Spotify and Signal for Ubuntu. Google Chrome is also set as the default web browser and the stylistics of the UI adapted to prefer using dark themes (with [Adwaita](https://gnome.pages.gitlab.gnome.org/libadwaita/) in Fedora and [Yaru](https://github.com/ubuntu/yaru) for Ubuntu). Additionally, a new hotkey is added to enable locking a screen using `<Cntrl> + L`. 
 
 # 📦 Installation
 
