@@ -1,8 +1,10 @@
 printf "$(tput setaf 2)\n Installing Docker...\n"
 
-wget -q https://desktop.docker.com/mac/main/amd64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-amd64
+wget https://desktop.docker.com/mac/main/amd64/Docker.dmg
 
-sudo hdiutil attach Docker.dmg
+mv /tmp/sommelier/Docker.dmg* /tmp/sommelier/Docker.dmg
+
+sudo hdiutil attach /tmp/sommelier/Docker.dmg
 sudo /Volumes/Docker/Docker.app/Contents/MacOS/install
 sudo hdiutil detach /Volumes/Docker
 
