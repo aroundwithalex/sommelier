@@ -87,3 +87,9 @@ If you want to add more applications or tools, you first need to identify the op
 # ⚖️ License
 
 MIT license - free for use and modification.
+
+# Tested On
+
+- Fedora Workstation 41
+- Ubuntu 24.04.1 LTS
+- macOS Sequoia 15.3
