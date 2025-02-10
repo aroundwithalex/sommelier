@@ -1,5 +1,8 @@
 printf "$(tput setaf 2)\n Installing Slack...\n"
-wget -q https://slack.com/downloads/instructions/linux?ddl=1&build=deb
+
+VERSION=4.41.105
+
+wget https://downloads.slack-edge.com/desktop-releases/linux/x64/$(VERSION)/slack-desktop-$(VERSION)-amd64.deb
 
 mv linux?ddl* slack-ubuntu.deb
 
