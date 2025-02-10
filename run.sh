@@ -65,12 +65,13 @@ if ! $PKG_MANAGER install git curl wget unzip 2> /dev/null; then
 fi 
 
 printf "$(tput setaf 2)\n Updating and upgrading system with $PKG_MANAGER\n"
-if ! $PKG_MANAGER update 2> /dev/null; then
+
+if ! $PKG_MANAGER update; then
 	printf "$(tput setaf 1)\n Unable to update packages via $PKG_MANAGER\n"
 	exit 1
 fi
 
-if ! $PKG_MANAGER upgrade 2> /dev/null; then
+if ! $PKG_MANAGER upgrade; then
 	printf "$(tput setaf 1)\n Unable to upgrade packages via $PKG_MAMANGER\n"
 	exit 1
 fi
