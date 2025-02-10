@@ -27,7 +27,7 @@
 | [Ghostty](https://ghostty.org/) | ✔️ | ✔️ | ✔️ |
 | [LocalSend](https://localsend.org/) | ❌ | ✔️ | ❌ |
 | [Signal](https://signal.org/) | ❌ | ✔️ | ✔️ |
-| [Slack](https://slack.com/intl/en-gb) | ✔️ | ✔️ | ✔️ |
+| [Slack](https://slack.com/intl/en-gb) | ❌ | ✔️ | ✔️ |
 | [Spotify](https://open.spotify.com/) | ❌ | ✔️ | ✔️ |
 | [Sublime Text](https://www.sublimetext.com/) | ✔️ | ✔️ | ✔️ |
 | [VLC](https://www.videolan.org/) | ✔️ | ✔️ | ✔️ |
@@ -75,6 +75,24 @@ cd sommelier
 ./run.sh
 ```
 
+# Management
+
+Sommelier automatically installs four commands that you can use to manage the tool. They can be called directly from a terminal like so: -
+
+```
+$ sommelier-update
+```
+
+The commands are as follows:-
+
+- `sommelier-install` - Runs the installation scripts. It is primarily there in case your applications are somehow removed, or if you don't want to use the `run.sh` script.
+
+- `sommelier-uninstall` - Removes sommelier from a system and uninstalls all packages installed by sommelier. Please note that background images will remain in place.
+
+- `sommelier-update` - Updates sommelier to the latest version by pulling this Git repository to `~/.local/share/`.
+
+- `sommelier-help` - Displays a help menu that describes these commands in detail within the terminal window. 
+
 # ⭐ Contributions
 
 Contributions are welcome! Please feel free to open pull requests with enhancements. If you want to add more applications, please also feel free to fork this repository and adapt 
@@ -93,3 +111,7 @@ MIT license - free for use and modification.
 - Fedora Workstation 41
 - Ubuntu 24.04.1 LTS
 - macOS Sequoia 15.3
+
+# Credits
+
+This projects was broadly inspired by [Omakub](https://github.com/basecamp/omakub), which also automatically creates new development environments but is limited to Ubuntu and is mainly for web development.
