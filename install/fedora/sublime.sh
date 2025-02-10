@@ -4,4 +4,4 @@ sudo dnf config-manager addrepo --from-repofile=https://download.sublimetext.com
 sudo dnf install -y sublime-text
 printf "$(tput setaf 2)\n Sublime Text successfully installed\n"
 
-cp ../../cfgs/sublime-text/Preferences.sublime-settings ~/.config/sublime-text/Packages/User/
+cp ../../cfgs/sublime/Preferences.sublime-settings ~/.config/sublime-text/Packages/User/
