@@ -6,4 +6,4 @@ zoxide init fish | source
 
 gh auth login
 
-echo "$(tput setaf 2)\n Successfully installed terminal tools\n"
+printf "$(tput setaf 2)\n Successfully installed terminal tools\n"
