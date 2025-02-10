@@ -20,8 +20,6 @@ if [ ! "$SUPPORTED_OS" = 'true' ]; then
 	exit 1
 fi
 
-printf "$(tput setaf 2)\n You are running on $(uname), which is a supported OS\n"
-
 DETECTED_OS='mac'
 PKG_MANAGER='brew'
 
@@ -52,6 +50,7 @@ if [ "$(uname -s)"  = 'Linux' ]; then
 			;;
 	esac
 elif [ "$(uname -s)" = 'Darwin' ]; then
+	printf "$(tput setaf 2)\n You are running on $(uname), which is a supported OS\n"
 	if ! command -v brew &>/dev/null; then
 		printf "$(tput setaf 2)\n Homebrew is not installed. Installing...\n"
 		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -65,7 +64,7 @@ if ! $PKG_MANAGER install git curl wget unzip 2> /dev/null; then
 	exit 1
 fi 
 
-printf "$(tput setaf 2)\n Updating and upgrading system with $PKG_MANAGER"
+printf "$(tput setaf 2)\n Updating and upgrading system with $PKG_MANAGER\n"
 if ! $PKG_MANAGER update 2> /dev/null; then
 	printf "$(tput setaf 1)\n Unable to update packages via $PKG_MANAGER\n"
 	exit 1
