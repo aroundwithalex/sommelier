@@ -75,7 +75,7 @@ cd sommelier
 ./run.sh
 ```
 
-# Management
+# 📋 Management
 
 Sommelier automatically installs four commands that you can use to manage the tool. They can be called directly from a terminal like so: -
 
@@ -106,7 +106,7 @@ If you want to add more applications or tools, you first need to identify the op
 
 MIT license - free for use and modification.
 
-# Tested On
+# ✅ Tested On
 
 - Fedora Workstation 41
 - Ubuntu 24.04.1 LTS
