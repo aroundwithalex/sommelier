@@ -5,4 +5,4 @@ sudo apt-get update
 sudo apt-get install sublime-text
 printf "$(tput setaf 2)\n Sublime Text successfully installed\n"
 
-cp ../../cfgs/sublime-text/Preferences.sublime-settings ~/.config/sublime-text/Packages/User/
+cp ~/.local/share/sommelier/cfgs/sublime/Preferences.sublime-settings ~/.config/sublime-text/Packages/User/
